@@ -2,7 +2,7 @@ const pubsub = require("@google-cloud/pubsub");
 
 module.exports = async (message, topicName, attributes = {}) => {
   console.log(`will send to topic ${topicName} : ${message}`);
-  const dataBuffer = Buffer.from(message);
+  const dataBuffer = Buffer.isBuffer(message) ? message : Buffer.from(message);
   try {
     const messageId = await pubsub
       .topic(topicName)
