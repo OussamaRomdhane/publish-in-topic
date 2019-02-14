@@ -12,10 +12,8 @@ module.exports = async (message, topicName, attributes = {}) => {
     dataBuffer = Buffer.from(message);
   }
   try {
-    const messageId = await pubsub
-      .topic(topicName)
-      .publisher()
-      .publish(dataBuffer, attributes);
+    const topic = await pubsub.topic(topicName);
+    const messageId = await topic.publisher().publish(dataBuffer, attributes);
     console.log(`Message ${messageId} published.`);
   } catch (err) {
     console.error("error:", err);
