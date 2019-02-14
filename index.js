@@ -1,6 +1,4 @@
-const PubSub = require("@google-cloud/pubsub");
-
-const pubsub = new PubSub();
+const pubsub = require("@google-cloud/pubsub");
 
 exports.publishInTopic = async (message, topicName, attributes = {}) => {
   console.log(`will send to topic ${topicName} : ${message}`);
