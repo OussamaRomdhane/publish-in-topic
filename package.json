@@ -1,0 +1,26 @@
+{
+  "name": "publish-in-topic",
+  "version": "1.0.0",
+  "description": "Publish in a GCP topic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OussamaRomdhane/publish-in-topic.git"
+  },
+  "keywords": [
+    "topic",
+    "gcp"
+  ],
+  "author": "Oussama Romdhane",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OussamaRomdhane/publish-in-topic/issues"
+  },
+  "homepage": "https://github.com/OussamaRomdhane/publish-in-topic#readme",
+  "dependencies": {
+    "@google-cloud/pubsub": "^0.24.1"
+  }
+}
