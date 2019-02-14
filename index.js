@@ -3,7 +3,7 @@ const isBuffer = require("is-buffer");
 
 module.exports = async (message, topicName, attributes = {}) => {
   console.log(`will send message to topic ${topicName}`);
-  const dataBuffer = null;
+  let dataBuffer = null;
   if (isBuffer(message)) {
     dataBuffer = message;
   } else {
