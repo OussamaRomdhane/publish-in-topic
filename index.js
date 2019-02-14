@@ -1,7 +1,9 @@
 const pubsub = require("@google-cloud/pubsub");
 const isBuffer = require("is-buffer");
+const PubSub = require("@google-cloud/pubsub");
 
 module.exports = async (message, topicName, attributes = {}) => {
+  const pubsub = new PubSub();
   console.log(`will send message to topic ${topicName}`);
   let dataBuffer = null;
   if (isBuffer(message)) {
