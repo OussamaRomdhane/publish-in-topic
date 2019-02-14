@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/OussamaRomdhane/publish-in-topic#readme",
   "dependencies": {
-    "@google-cloud/pubsub": "^0.24.1"
+    "@google-cloud/pubsub": "^0.24.1",
+    "is-buffer": "^2.0.3"
   }
 }
