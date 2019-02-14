@@ -1,6 +1,6 @@
 const pubsub = require("@google-cloud/pubsub");
 
-exports.publishInTopic = async (message, topicName, attributes = {}) => {
+module.exports = async (message, topicName, attributes = {}) => {
   console.log(`will send to topic ${topicName} : ${message}`);
   const dataBuffer = Buffer.from(message);
   try {
