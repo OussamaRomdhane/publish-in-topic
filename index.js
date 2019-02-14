@@ -16,6 +16,6 @@ module.exports = async (message, topicName, attributes = {}) => {
       .publish(dataBuffer, attributes);
     console.log(`Message ${messageId} published.`);
   } catch (err) {
-    console.err("error:", err);
+    console.error("error:", err);
   }
 };
