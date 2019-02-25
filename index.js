@@ -1,4 +1,3 @@
-const pubsub = require("@google-cloud/pubsub");
 const isBuffer = require("is-buffer");
 const PubSub = require("@google-cloud/pubsub");
 
